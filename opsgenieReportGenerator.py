@@ -36,7 +36,7 @@ def get_ops_genie_alert_data(startDate, endDate, team, keys):
         json_response = response.json()
         print("data fetched")
         fi = sdate + ' - ' + edate
-        create_csv(fi, json_response, team)
+        create_csv(fi, json_response, team, keys)
     else:
         print("unable to fetch data")
 
